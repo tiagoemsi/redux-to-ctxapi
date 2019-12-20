@@ -1,6 +1,4 @@
 import React from 'react';
-import {connect} from 'react-redux';
-import actions from './actions';
 
 function App({char, searchTerm, searchTermChanged}) {
   return (
@@ -46,4 +44,4 @@ function App({char, searchTerm, searchTermChanged}) {
   );
 }
 
-export default connect(store => store, actions)(App);
+export default App;
